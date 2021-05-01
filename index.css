@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat::wght@80,100,400,500,800,900,700);
+:root {
+    --background: #E5E5E5;
+    --lightText: #fcf8f9a6;
+    --darkNav: #1A131F;
+    --mainColor: #FF395D;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: var(--background);
+}
+
+#content {
+    transition: margin-left .25s, margin-right .25s;
+    margin-top: 50px;
+}
+
+.title {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title span {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.domain {
+    color: var(--mainColor);
+}
+
+.extension {
+    color: var(--darkNav);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero-product-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+    width: inherit;
+    top: -60px;
+}
+
+.hero-product-name {
+    margin-left: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 2.5px 5px #00000069;
+    letter-spacing: 1px;
+    margin-top: -20px;
+}
+
+.hero-date {
+    margin-bottom: 3px;
+    color: var(--lightText);
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 18px;
+}
+
+.message {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.head {
+    text-align: center;
+}
+
+.discord {
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    .title span {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title span {
+        font-size: 30px;
+    }
+}
